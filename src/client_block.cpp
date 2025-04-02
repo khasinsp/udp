@@ -422,7 +422,7 @@ void main_loop() {
 int main() {
 
     // RTT
-    std::ofstream hist_csv("/home/urc/UDP_Client/response_times/PCI_tests/blocking/02_04_1/hist.csv");
+    std::ofstream hist_csv("/home/urc/udp/response_times/PCI_tests/blocking/02_04_1/hist.csv");
     if (!hist_csv.is_open()) {
         std::cerr << "Histogram CSV could not be opened" << std::endl;
     }
@@ -434,7 +434,7 @@ int main() {
     hist_csv.flush();
 
     // RTT
-    std::ofstream hw_hist_csv("/home/urc/UDP_Client/response_times/PCI_tests/blocking/02_04_1/hw_hist.csv");
+    std::ofstream hw_hist_csv("/home/urc/udp/response_times/PCI_tests/blocking/02_04_1/hw_hist.csv");
     if (!hw_hist_csv.is_open()) {
         std::cerr << "Histogram CSV could not be opened" << std::endl;
     }
